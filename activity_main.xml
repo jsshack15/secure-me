@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#000000"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.secure_me.MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/camera1"
+        android:layout_above="@+id/NOTIFY"
+        android:layout_alignLeft="@+id/NOTIFY"
+        android:layout_alignStart="@+id/NOTIFY"
+        android:id="@+id/CAMERA" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/notify"
+        android:id="@+id/NOTIFY"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/alert"
+        android:id="@+id/ALERT"
+        android:layout_alignTop="@+id/CAMERA"
+        android:layout_toRightOf="@+id/CAMERA"
+        android:onClick="Alertmusic"
+        android:layout_toEndOf="@+id/CAMERA"
+        android:layout_marginTop="48dp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/calling"
+        android:id="@+id/CALLING"
+        android:layout_alignTop="@+id/HOSPITAL"
+        android:layout_toLeftOf="@+id/NOTIFY"
+        android:layout_toStartOf="@+id/NOTIFY" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/defence"
+        android:id="@+id/DEFENCE"
+        android:layout_below="@+id/NOTIFY"
+        android:layout_toRightOf="@+id/CALLING"
+        android:layout_toEndOf="@+id/CALLING" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/police"
+        android:id="@+id/POLICE"
+        android:layout_alignTop="@+id/ALERT"
+        android:layout_alignLeft="@+id/CALLING"
+        android:layout_alignStart="@+id/CALLING" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/hospital"
+        android:id="@+id/HOSPITAL"
+        android:layout_below="@+id/ALERT"
+        android:layout_toRightOf="@+id/NOTIFY"
+        android:layout_toEndOf="@+id/NOTIFY" />
+</RelativeLayout>
